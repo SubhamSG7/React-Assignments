@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+}
+
+.container {
+    width: 350px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background: #1f1f1f;
+}
+
+.tab {
+    width: 50%;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.tab:hover {
+    background: #333;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.form-content {
+    position: relative;
+}
+
+#login-tab:checked ~ .form-content #login-form {
+    display: block;
+}
+
+#register-tab:checked ~ .form-content #register-form {
+    display: block;
+}
+
+#login-tab:checked ~ .form-content #register-form {
+    display: none;
+}
+
+#register-tab:checked ~ .form-content #login-form {
+    display: none;
+}
+
+#login-tab:checked ~ .tabs label[for="login-tab"],
+#register-tab:checked ~ .tabs label[for="register-tab"] {
+    background: #333;
+    color: #fff;
+}
+
+.form {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: none;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background: #004080;
+    transform: translateY(0);
+}
