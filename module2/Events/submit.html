@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Event</title>
+</head>
+<body>
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your name" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="output"></div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            document.getElementById("output").innerHTML = "Form Submitted!";
+        }
+    </script>
+</body>
+</html>

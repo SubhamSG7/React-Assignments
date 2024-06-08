@@ -1,0 +1,42 @@
+<!-- JavaScript events are actions or occurrences that happen in the browser and can be handled using JavaScript. Here are examples of some commonly used JavaScript events along with how to use them:
+
+Common JavaScript Events:
+
+Click Event
+Mouseover and Mouseout Events
+Keydown and Keyup Events
+Change Event
+Submit Event
+Load Event
+Focus and Blur Events
+Resize Event -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Event</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <button class="button" onclick="handleClick()">Click Me!</button>
+    <div id="output"></div>
+
+    <script>
+        function handleClick() {
+            document.getElementById("output").innerHTML = "Button Clicked!";
+        }
+    </script>
+</body>
+</html>

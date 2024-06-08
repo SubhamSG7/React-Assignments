@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resize Event</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        window.onresize = function() {
+            document.getElementById("output").innerHTML = `Window resized to ${window.innerWidth} x ${window.innerHeight}`;
+        }
+    </script>
+</body>
+</html>

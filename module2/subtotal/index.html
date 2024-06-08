@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtotal Calculation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Subtotal Calculation</h1>
+        <table class="items-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price per Unit</th>
+                    <th>Quantity</th>
+                    <th>Price Subtotal</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="item-table">
+                <tr>
+                    <td><img src="https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000013195480-Black-BLACK-1000013195480_01-2100.jpg" alt="Item 1" class="item-image"></td>
+                    <td class="price">10.00</td>
+                    <td><input type="number" class="quantity" value="1" min="1"></td>
+                    <td class="item-subtotal">$10.00</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/original/1076286/W9NutfjXco-1076286_1.jpg" alt="Item 2" class="item-image"></td>
+                    <td class="price">15.50</td>
+                    <td><input type="number" class="quantity" value="2" min="1"></td>
+                    <td class="item-subtotal">$31.00</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="https://thesleepcompany.in/cdn/shop/files/Ultron_Light-blue-1.jpg?v=1712037533&width=1100" alt="Item 3" class="item-image"></td>
+                    <td class="price">20.00</td>
+                    <td><input type="number" class="quantity" value="3" min="1"></td>
+                    <td class="item-subtotal">$60.00</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="subtotal" id="subtotal">Total Subtotal: $101.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

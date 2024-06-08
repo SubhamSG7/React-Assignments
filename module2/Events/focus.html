@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Focus and Blur Events</title>
+</head>
+<body>
+    <input type="text" onfocus="handleFocus()" onblur="handleBlur()" placeholder="Focus on me!">
+    <div id="output"></div>
+
+    <script>
+        function handleFocus() {
+            document.getElementById("output").innerHTML = "Input Focused!";
+        }
+        function handleBlur() {
+            document.getElementById("output").innerHTML = "Input Lost Focus!";
+        }
+    </script>
+</body>
+</html>

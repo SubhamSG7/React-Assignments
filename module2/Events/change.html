@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Event</title>
+</head>
+<body>
+    <select onchange="handleChange(this)">
+        <option value="Hello, World!">Greeting</option>
+        <option value="Goodbye, World!">Farewell</option>
+        <option value="JavaScript is fun!">Statement</option>
+    </select>
+    <div id="output"></div>
+
+    <script>
+        function handleChange(select) {
+            const output = document.getElementById("output");
+            output.textContent = select.value;
+        }
+    </script>
+</body>
+</html>

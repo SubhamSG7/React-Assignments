@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keydown and Keyup Events</title>
+</head>
+<body>
+    <input type="text" onkeydown="handleKeyDown()" onkeyup="handleKeyUp()" placeholder="Type something...">
+    <div id="output"></div>
+
+    <script>
+        function handleKeyDown() {
+            document.getElementById("output").innerHTML = "Key Down!";
+        }
+        function handleKeyUp() {
+            document.getElementById("output").innerHTML = "Key Up!";
+        }
+    </script>
+</body>
+</html>
